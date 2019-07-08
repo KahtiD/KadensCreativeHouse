@@ -68,7 +68,7 @@ render() {
   <div className="body1">
     <div className="contact-wrapper">
       <h1 className="title1">Contact Me</h1>
-      <div className="form">
+      <div className="formArea">
       {this.state.formSubmit ?
         <div className="submitCover">
           <h1>Thank You</h1>
@@ -79,7 +79,7 @@ render() {
 
         :
 
-        <form  onSubmit={e => this.handleSubmit.call(this, e)}>
+        <form  className="formWrapper" onSubmit={e => this.handleSubmit.call(this, e)}>
              <textarea className="name" name="name" placeholder="Name" value={this.state.name} onChange={e => this.handleChange.call(this, e)} required></textarea>
              <textarea className="email" name="email" placeholder="Email"  value={this.state.email} onChange={e => this.handleChange.call(this, e)} required></textarea>
              <textarea className="subject" name="subject" placeholder="Subject" value={this.state.subject} onChange={e => this.handleChange.call(this, e)} required></textarea>
