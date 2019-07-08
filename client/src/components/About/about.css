@@ -1,0 +1,54 @@
+
+  .body {
+    width: 100%;
+    height: 527px;
+    font-family: 'Front Page Neue';
+  }
+
+  .paragraph{
+    width: 69.4%;
+    height: 700px;
+    margin: 0 auto;
+    /* float: right;
+    margin-right: 20px;
+    margin-top: 10px; */
+  }
+
+  /* .imageBox {
+    width: 600px;
+    height: 500px;
+    margin-left: 20px;
+    border: 1px solid red;
+  }
+
+  .box1{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    z-index: 5;
+  }
+
+  .box2{
+    width: 350px;
+    height: 350px;
+    position: relative;
+    top: 200px;
+    left: 200px;
+  } */
+
+  .CV {
+    font-family: Maddison Signature DEMO;
+    font-size: 25px;
+    padding-right: 40px;
+    color: black;
+  }
+
+  .Link {
+    font-family: Maddison Signature DEMO;
+    font-size: 25px;
+    color: black;
+  }
+
+  .aboutText {
+    /* padding: 0px 197px 0px 197px; */
+  }

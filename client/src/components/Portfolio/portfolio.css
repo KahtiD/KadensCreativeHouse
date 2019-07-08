@@ -1,0 +1,123 @@
+.body {
+  width: 1440px;
+  height: 710px;
+  font-family: 'Front Page Neue';
+}
+
+
+.gallery {
+  margin: 0 auto;
+  margin: 50px 0px 50px 0px;
+  /* border: 2px solid red; */
+  background-color: white;
+  opacity: 0.15;
+}
+
+.top-row {
+  margin: 0 auto;
+  width: 1106px;
+}
+
+.one {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0px 100px 50px 0px;
+  background-size: cover;
+  background-position: center;
+}
+
+.two {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0px 100px 50px 0px;
+  background-size: cover;
+  background-position: center;
+}
+
+.three {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  display: inline-block;
+  vertical-align: top;
+  background-size: cover;
+  background-position: center;
+}
+
+.bottom-row {
+  margin: 0 auto;
+  width: 1106px;
+}
+
+.four {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0px 100px 0px 0px;
+  background-size: cover;
+  background-position: center;
+}
+
+.five {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0px 100px 0px 0px;
+  background-size: cover;
+  background-position: center;
+}
+
+.six {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  display: inline-block;
+  vertical-align: top;
+  background-size: cover;
+  background-position: center;
+}
+
+.title {
+  position: relative;
+  bottom: 400px;
+  font-size: 60px;
+  text-align: center;
+  font-family: 'Maddison Signature DEMO';
+}
+
+.galleryView {
+  height: 650px;
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  bottom: 850px;
+  margin-top: 75px;
+}
+
+.next {
+  position: relative;
+  bottom: 50px;
+  border: none;
+  width: 100px;
+  height: 50px;
+  background-color: #00FF80;
+}
+
+.previous {
+  position: relative;
+  bottom: 50px;
+  border: none;
+  width: 100px;
+  height: 50px;
+  background-color: #FF9D00;
+}
