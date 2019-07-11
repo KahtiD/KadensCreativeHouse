@@ -5,15 +5,33 @@
 } */
 
 .header {
-  width: 1440px;
-  height: 770px;
+  /* width: 1440px; */
+  /* height: 770px; */
+  height: 100%;
   color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+  ". . . . . ."
+  ". logo logo logo logo ."
+  ". . footer footer . .";
+}
+
+footer {
+  color: black;
+  font-size: 0.8em;
+  text-align: center;
+  align-self: center;
+  /* height: 10%; */
+  grid-area: footer;
 }
 
 
 .logo {
-  padding-top: 250px;
-  width: 1170px;
-  height: 221.22;
-  margin: 0 auto;
+  /* padding-top: 250px; */
+  /* width: 1170px;
+  height: 221.22; */
+  /* margin: 0 auto; */
+  grid-area: logo;
 }

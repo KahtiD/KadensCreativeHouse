@@ -1,123 +1,186 @@
-.body {
-  width: 1440px;
-  height: 710px;
-  font-family: 'Front Page Neue';
-}
-
-
-.gallery {
-  margin: 0 auto;
-  margin: 50px 0px 50px 0px;
-  /* border: 2px solid red; */
-  background-color: white;
-  opacity: 0.15;
-}
-
-.top-row {
-  margin: 0 auto;
-  width: 1106px;
-}
-
-.one {
-  width: 300px;
-  height: 300px;
-  border: 1px solid black;
-  display: inline-block;
-  vertical-align: top;
-  margin: 0px 100px 50px 0px;
-  background-size: cover;
-  background-position: center;
-}
-
-.two {
-  width: 300px;
-  height: 300px;
-  border: 1px solid black;
-  display: inline-block;
-  vertical-align: top;
-  margin: 0px 100px 50px 0px;
-  background-size: cover;
-  background-position: center;
-}
-
-.three {
-  width: 300px;
-  height: 300px;
-  border: 1px solid black;
-  display: inline-block;
-  vertical-align: top;
-  background-size: cover;
-  background-position: center;
-}
-
-.bottom-row {
-  margin: 0 auto;
-  width: 1106px;
-}
-
-.four {
-  width: 300px;
-  height: 300px;
-  border: 1px solid black;
-  display: inline-block;
-  vertical-align: top;
-  margin: 0px 100px 0px 0px;
-  background-size: cover;
-  background-position: center;
-}
-
-.five {
-  width: 300px;
-  height: 300px;
-  border: 1px solid black;
-  display: inline-block;
-  vertical-align: top;
-  margin: 0px 100px 0px 0px;
-  background-size: cover;
-  background-position: center;
-}
-
-.six {
-  width: 300px;
-  height: 300px;
-  border: 1px solid black;
-  display: inline-block;
-  vertical-align: top;
-  background-size: cover;
-  background-position: center;
-}
-
-.title {
-  position: relative;
-  bottom: 400px;
-  font-size: 60px;
-  text-align: center;
+@font-face {
   font-family: 'Maddison Signature DEMO';
 }
 
-.galleryView {
-  height: 650px;
-  width: 1000px;
-  margin: 0 auto;
-  position: relative;
-  bottom: 850px;
-  margin-top: 75px;
+.body{
+  /* width: 1440px; */
+  height: 710px;
 }
 
-.next {
+.title {
+  text-align: center;
+  grid-area: title;
+}
+
+.one {
+  border: 1px solid black;
+  background-size: cover;
+  background-position: center;
+  grid-area: one;
+}
+
+.two {
+  border: 1px solid black;
+  background-size: cover;
+  background-position: center;
+  grid-area: two;
+}
+
+.three {
+  border: 1px solid black;
+  background-size: cover;
+  background-position: center;
+  grid-area: three;
+
+}
+
+
+.four {
+  border: 1px solid black;
+  background-size: cover;
+  background-position: center;
+  grid-area: four;
+}
+
+.five {
+  border: 1px solid black;
+  background-size: cover;
+  background-position: center;
+  grid-area: five;
+}
+
+.six {
+  border: 1px solid black;
+  background-size: cover;
+  background-position: center;
+  grid-area: six;
+}
+
+
+.sizing {
+  width: 90%;
+  height: 80%;
+  margin: 0 auto;
+}
+
+.gallery {
+  /* margin: 0 auto; */
+  /* width: 1006px;
+  height: 654px; */
+  width: 90%;
+  height: 80%;
+  position: absolute;
+  font-family: 'Maddison Signature DEMO';
+  /* margin: 50px 0px 50px 0px; */
+  /* border: 2px solid red; */
+  /* background-color: white; */
+  /* opacity: 0.15; */
+  /* font-size: 3.8vw; */
+  display: grid;
+  grid-gap: 15px;
+  grid-template-rows: repeat(7, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+  "title title title title"
+  "one one two two"
+  "one one two two"
+  "three three four four"
+  "three three four four"
+  "five five six six"
+  "five five six six";
+}
+
+.galleryWrapper {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  /* padding-block-end: 20%; */
   position: relative;
-  bottom: 50px;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.galleryView {
+  /* height: 90%;
+  width: 90%; */
+  margin: 0 auto;
+  /* grid-area: gallery; */
+  grid-column: 1/9;
+  grid-row: 3/6;
+  position: relative;
+  bottom: 80px;
+  /* grid-column: 2  span / span 5;
+  grid-row: 2  / span 5; */
+  /* margin-top: 75px; */
+
+}
+
+@media screen and (min-width: 750px) {
+
+  .sizing {
+    width: 60%;
+    height: 70%;
+    margin: 0 auto;
+  }
+
+  .gallery {
+    position: absolute;
+    font-family: 'Maddison Signature DEMO';
+    margin: 0 auto;
+    width: 60%;
+    height: 70%;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+    ". . . . . ."
+    "one one two two three three"
+    "one one two two three three"
+    ". . title title . ."
+    "four four five five six six"
+    "four four five five six six";
+  }
+
+  .galleryWrapper {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+
+  }
+
+  .galleryView {
+    margin: 0 auto;
+    grid-column: 1/9;
+    grid-row: 1/7;
+  }
+
+}
+
+.faded {
+  display: none;
+}
+
+
+.next {
+  /* position: relative; */
+  margin-right: 5px;
+  /* bottom: 50px; */
   border: none;
   width: 100px;
   height: 50px;
-  background-color: #00FF80;
+  box-shadow: 0px 2px 9px rgba(122, 122, 122, .5);
+  background-color: white;
 }
 
 .previous {
-  position: relative;
-  bottom: 50px;
+  /* position: relative;
+  bottom: 50px; */
   border: none;
   width: 100px;
   height: 50px;
-  background-color: #FF9D00;
+  box-shadow: 0px 2px 9px rgba(122, 122, 122, .5);
+  background-color: white;
 }

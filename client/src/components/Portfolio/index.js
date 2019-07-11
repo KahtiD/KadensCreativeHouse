@@ -184,45 +184,60 @@ render() {
   console.log("which one is it", this.state.clicked);
   return(
   <div className="body">
-    <div className={this.state.clicked ? "gallery" : "hide"}>
-      <div className="top-row">
-        <div className="one" style={{backgroundImage: `url(${logo1})`}} onClick={this.click1.bind(this)} ></div>
-        <div className="two" style={{backgroundImage: `url(${logo2})`}} onClick={this.click2.bind(this)}></div>
-        <div className="three" style={{backgroundImage: `url(${logo3})`}} onClick={this.click3.bind(this)}></div>
+    <div className="sizing">
+      <div className={this.state.clicked1 || this.state.clicked2 || this.state.clicked3 ? "faded" : "gallery"}>
+
+          <div className="one" style={{backgroundImage: `url(${logo1})`}} onClick={this.click1.bind(this)} ></div>
+          <div className="two" style={{backgroundImage: `url(${logo2})`}} onClick={this.click2.bind(this)}></div>
+          <div className="three" style={{backgroundImage: `url(${logo3})`}} onClick={this.click3.bind(this)}></div>
+
+
+          <div className="four" style={{backgroundImage: `url(${placeholder})`}} onClick={this.click4.bind(this)}></div>
+          <div className="five" style={{backgroundImage: `url(${placeholder})`}} onClick={this.click5.bind(this)}></div>
+          <div className="six" style={{backgroundImage: `url(${placeholder})`}} onClick={this.click6.bind(this)}></div>
+          <h1 className="title">Previous Work</h1>
+
       </div>
-      <div className="bottom-row">
-        <div className="four" style={{backgroundImage: `url(${placeholder})`}} onClick={this.click4.bind(this)}></div>
-        <div className="five" style={{backgroundImage: `url(${placeholder})`}} onClick={this.click5.bind(this)}></div>
-        <div className="six" style={{backgroundImage: `url(${placeholder})`}} onClick={this.click6.bind(this)}></div>
-      </div>
-    </div>
-    <h1 className="title">Previous Work</h1>
+
+
 
     { this.state.clicked1 &&
+      <div className="galleryWrapper">
         <div className="galleryView">
+          <div style={{position: "relative", width: "210px", height: "50px", margin: "0 auto", marginBottom: "20px"}}>
+            <button className="next" onClick={this.next1.bind(this)}>Next</button>
+            <button className="next" onClick={this.previous1.bind(this)}>Previous</button>
+          </div>
           <img src={this.state.change1 ? logo1 : logoMU1} width="100%" height="100%" onClick={this.unclick1.bind(this)} alt="img1"></img>
-          <button className="next" onClick={this.next1.bind(this)}>Next</button>
-          <button className="next" onClick={this.previous1.bind(this)}>Previous</button>
         </div>
+      </div>
     }
 
     { this.state.clicked2 &&
-        <div className="galleryView">
-          <img src={this.state.change2 ? logo2 : logoMU2} width="100%" height="100%" onClick={this.unclick2.bind(this)} alt="img2"></img>
-          <button className="next" onClick={this.next2.bind(this)}>Next</button>
-          <button className="next" onClick={this.previous2.bind(this)}>Previous</button>
+        <div className="galleryWrapper">
+          <div className="galleryView">
+            <div style={{position: "relative", width: "210px", height: "50px", margin: "0 auto", marginBottom: "20px"}}>
+              <button className="next" onClick={this.next2.bind(this)}>Next</button>
+              <button className="next" onClick={this.previous2.bind(this)}>Previous</button>
+            </div>
+            <img src={this.state.change2 ? logo2 : logoMU2} style={{objectFit: "cover"}} width="100%" height="100%" onClick={this.unclick2.bind(this)} alt="img2"></img>
+          </div>
         </div>
     }
 
     { this.state.clicked3 &&
-        <div className="galleryView">
-          <img src={this.state.change3 ? logo3 :logoMU3} width="100%" height="100%" onClick={this.unclick3.bind(this)} alt="img3"></img>
-          <button className="next" onClick={this.next3.bind(this)}>Next</button>
-          <button className="next" onClick={this.previous3.bind(this)}>Previous</button>
+        <div className="galleryWrapper">
+          <div className="galleryView">
+            <div style={{position: "relative", width: "210px", height: "50px", margin: "0 auto", marginBottom: "20px"}}>
+              <button className="next" onClick={this.next3.bind(this)}>Next</button>
+              <button className="next" onClick={this.previous3.bind(this)}>Previous</button>
+            </div>
+            <img src={this.state.change3 ? logo3 :logoMU3} width="100%" height="100%" onClick={this.unclick3.bind(this)} alt="img3"></img>
+          </div>
         </div>
     }
 
-
+    </div>
   </div>
     );
   }
