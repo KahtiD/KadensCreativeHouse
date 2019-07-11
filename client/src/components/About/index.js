@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import './about.css';
-import aboutText from '../../images/aboutText.svg';
-// import ReactFullpage from '@fullpage/react-fullpage';
 
-//import {} from '../../components';
-// import {Link} from 'react-router-dom';
+
 
 
 

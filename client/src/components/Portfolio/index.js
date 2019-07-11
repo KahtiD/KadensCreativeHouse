@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './portfolio.css';
-import aboutText from '../../images/aboutText.svg';
 
 import logo1 from '../../images/cp.png';
 import logoMU1 from '../../images/cpMockUp.png';
@@ -181,7 +180,6 @@ export class Portfolio extends Component {
   }
 
 render() {
-  console.log("which one is it", this.state.clicked);
   return(
   <div className="body">
     <div className="sizing">

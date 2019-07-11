@@ -11,6 +11,7 @@ import ReactFullpage from "@fullpage/react-fullpage";
 const App = (fullpageProps) => (
 
   <ReactFullpage
+    licenseKey={'your key'}
     {...fullpageProps}
     render={({ state, fullpageApi }) => {
       return (

@@ -8,12 +8,8 @@ const nodemailer = require('nodemailer');
 const app = express();
 const port = 4001;
 
-// app.use(express.static('/client/public'));
+app.use(express.static('/client/public'));
 
-// app.use(bodyParser.urlencoded({ extended: false }));
-// app.use(bodyParser.json());
-
-// parse application/x-www-form-urlencoded
 app.use(formidable());
 
 
