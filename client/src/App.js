@@ -3,57 +3,64 @@ import logo from './images/logo.svg';
 import {About, Portfolio, Contact} from './components';
 import './App.css';
 import Zoom from 'react-reveal/Zoom';
-import Fullpage, { FullPageSections, FullpageSection } from '@ap.cx/react-fullpage'
+import ReactFullpage from "@fullpage/react-fullpage";
+// import Fullpage, { FullPageSections, FullpageSection } from '@ap.cx/react-fullpage'
 
 
 
+const App = (fullpageProps) => (
 
-function App() {
+  <ReactFullpage
+    {...fullpageProps}
+    render={({ state, fullpageApi }) => {
+      return (
+          <div>
+                <div className="section">
+                  <Zoom>
+                      <header className="header">
+                        <div className="logo">
+                          <img src={logo}  alt="logo" />
+                        </div>
+                        <footer>Kahti N Demba &copy; 2019</footer>
+                      </header>
+                  </Zoom>
+                </div>
 
-  return (
-    <Fullpage>
-      <div>
-        <FullPageSections>
-            <FullpageSection>
-              <Zoom>
-                  <header className="header">
-                    <div className="logo">
-                      <img src={logo}  alt="logo" />
-                    </div>
-                    <footer>Kahti N Demba &copy; 2019</footer>
-                  </header>
-              </Zoom>
-            </FullpageSection>
 
-          <FullpageSection style={{paddingTop: "75px"}}>
-            <Zoom>
-              <div>
-                <About/>
+
+              <div className="section">
+                <Zoom>
+                  <div className="section">
+                    <About/>
+                  </div>
+                </Zoom>
               </div>
-            </Zoom>
-          </FullpageSection>
 
 
-          <FullpageSection style={{paddingTop: "70px"}}>
-            <Zoom>
-              <div>
-                <Portfolio/>
+
+              <div className="section">
+                <Zoom>
+                  <div className="section">
+                    <Portfolio/>
+                  </div>
+                </Zoom>
               </div>
-            </Zoom>
-          </FullpageSection>
 
-          <FullpageSection style={{paddingTop: "45px"}}>
-            <Zoom>
-              <div>
-                <Contact/>
+
+
+              <div className="section">
+                <Zoom>
+                  <div className="section">
+                    <Contact/>
+                  </div>
+                </Zoom>
               </div>
-            </Zoom>
-          </FullpageSection>
 
-        </FullPageSections>
-      </div>
-    </Fullpage>
-  );
-}
+
+          </div>
+      );
+    }}
+  />
+);
 
 export default App;

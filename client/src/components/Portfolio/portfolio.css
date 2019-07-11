@@ -10,6 +10,7 @@
 .title {
   text-align: center;
   grid-area: title;
+  padding-block-start: 5%;
 }
 
 .one {
@@ -68,7 +69,7 @@
   /* width: 1006px;
   height: 654px; */
   width: 90%;
-  height: 80%;
+  height: 90%;
   position: absolute;
   font-family: 'Maddison Signature DEMO';
   /* margin: 50px 0px 50px 0px; */
@@ -155,6 +156,8 @@
     margin: 0 auto;
     grid-column: 1/9;
     grid-row: 1/7;
+    position: relative;
+    bottom: 0px;
   }
 
 }
