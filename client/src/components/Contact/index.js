@@ -71,10 +71,10 @@ render() {
       <div className="formArea">
       {this.state.formSubmit ?
         <div className="submitCover">
-          <h1>Thank You</h1>
+          <h1>Thank You.</h1>
           <h2>Your message has been recieved.</h2>
           <h3>I will be in contact soon!</h3>
-          <button onClick={this.handleHidemessage.bind(this)}>Close</button>
+          <button className="close" onClick={this.handleHidemessage.bind(this)}>Close</button>
         </div>
 
         :

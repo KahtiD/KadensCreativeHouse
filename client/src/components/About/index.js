@@ -27,8 +27,8 @@ render() {
             <p id="p" className="aboutText">
               <span style={{color: "#00EBFF"}}>Hi, I'm Kahti a digital creative. &nbsp;</span>
               <span style={{color: "#00FFC4"}}>I specialise in: &nbsp;</span>
-              <span style={{color: "#00FF80"}}>Web development CX UX UI Design Graphic Design &nbsp;</span>
-              <span style={{color: "#76FF00"}}>My skills: a Problem solving Empathy  Creativity Tenacity Reliable Customer Orientated &nbsp;</span>
+              <span style={{color: "#00FF80"}}>Web development, CX, UX UI Design & Graphic Design. &nbsp;</span>
+              <span style={{color: "#76FF00"}}>My skills are: Problem solving, Empathy, Creativity, Tenacity, Reliablity & Customer Orientation. &nbsp;</span>
               <span style={{color: "#FFCE00"}}>I am proficient in: &nbsp;</span>
               <span style={{color: "#FF9D00"}}>Adobe Illustrator Photoshop XD HTML5 CSS3 Javascript React.js Node.js</span>
             </p>

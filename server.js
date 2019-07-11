@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const formidable = require('express-formidable');
 // const bodyParser = require('body-parser');
@@ -18,11 +19,11 @@ app.use(formidable());
 
 
 const transporter = nodemailer.createTransport({
-    host: 'smtp.ethereal.email',
-    port: 587,
+    service: 'gmail',
+    // port: 587,
     auth: {
-      user: 'ddufeegblbtwonz6@ethereal.email',
-      pass: '2FspGyGn6tjU4f21Ab'
+      user: process.env.EMAIL,
+      pass: process.env.EMAIL_PASSWORD
     }
 });
 
@@ -38,8 +39,8 @@ app.post('/contactUs', (req, res) => {
   // console.log('see body', req.fields);
 
   let mailOptions = {
-          from: ' "Ya Bish" <ddufeegblbtwonz6@ethereal.email>', // e-commerce email
-          to: req.fields.email, // client/customers email
+          from: ` "Ya Bish" <${process.env.EMAIL}>`, // e-commerce email
+          to: process.env.RECEVING_EMAIL, // client/customers email
           subject: req.fields.subject,
           text: 'Hello world?',
           html: emailOutput,
