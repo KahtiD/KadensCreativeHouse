@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './portfolio.css';
+import './portfolio.scss';
 
 import logo1 from '../../images/cp.png';
 import logoMU1 from '../../images/cpMockUp.png';
@@ -10,7 +10,8 @@ import logoMU2 from '../../images/fljMockUp.png';
 import logo3 from '../../images/bgnrNew.png';
 import logoMU3 from '../../images/bgnrMockUp.png';
 
-import placeholder from '../../images/default.png';
+import placeholder from '../../images/default.svg';
+import dark_placeholder from '../../images/dark_default.svg';
 
 
 
@@ -181,7 +182,7 @@ export class Portfolio extends Component {
 
 render() {
   return(
-  <div className="body">
+  <div className={this.props.modeChange ? "dark_body" : "body"}>
     <div className="sizing">
       <div className={this.state.clicked1 || this.state.clicked2 || this.state.clicked3 ? "faded" : "gallery"}>
 
@@ -190,9 +191,9 @@ render() {
           <div className="three" style={{backgroundImage: `url(${logo3})`}} onClick={this.click3.bind(this)}></div>
 
 
-          <div className="four" style={{backgroundImage: `url(${placeholder})`}} onClick={this.click4.bind(this)}></div>
-          <div className="five" style={{backgroundImage: `url(${placeholder})`}} onClick={this.click5.bind(this)}></div>
-          <div className="six" style={{backgroundImage: `url(${placeholder})`}} onClick={this.click6.bind(this)}></div>
+          <div className="four" style={{backgroundImage: `url(${this.props.modeChange ? dark_placeholder : placeholder})`}} onClick={this.click4.bind(this)}></div>
+          <div className="five" style={{backgroundImage: `url(${this.props.modeChange ? dark_placeholder : placeholder})`}} onClick={this.click5.bind(this)}></div>
+          <div className="six" style={{backgroundImage: `url(${this.props.modeChange ? dark_placeholder : placeholder})`}} onClick={this.click6.bind(this)}></div>
           <h1 className="title">Previous Work</h1>
 
       </div>

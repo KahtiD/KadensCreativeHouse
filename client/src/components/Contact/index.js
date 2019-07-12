@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './contact.css';
+import './contact.scss';
 // import aboutText from '../../images/aboutText.svg';
 //import {} from '../../components';
 // import {Link} from 'react-router-dom';
@@ -65,9 +65,9 @@ handleSubmit(e) {
 
 render() {
   return(
-  <div className="body1">
+  <div className={this.props.modeChange ? "dark_body" : "body"}>
     <div className="contact-wrapper">
-      <h1 className="title1">Contact Me</h1>
+      <h1 className="titleOne">Contact Me</h1>
       <div className="formArea">
       {this.state.formSubmit ?
         <div className="submitCover">

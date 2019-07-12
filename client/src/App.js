@@ -1,67 +1,84 @@
-import React from 'react';
-import logo from './images/logo.svg';
+import React, { useState } from 'react';
+import light_logo from './images/logo.svg';
+import dark_logo from './images/darklogo.svg';
 import {About, Portfolio, Contact} from './components';
-import './App.css';
+import './App.scss';
 import Zoom from 'react-reveal/Zoom';
 import ReactFullpage from "@fullpage/react-fullpage";
-// import Fullpage, { FullPageSections, FullpageSection } from '@ap.cx/react-fullpage'
 
 
 
-const App = (fullpageProps) => (
 
-  <ReactFullpage
-    licenseKey={'your key'}
-    {...fullpageProps}
-    render={({ state, fullpageApi }) => {
-      return (
-          <div>
-                <div className="section">
-                  <Zoom>
-                      <header className="header">
-                        <div className="logo">
-                          <img src={logo}  alt="logo" />
+
+function App(props) {
+
+  const [mode, setMode] = useState(getInitialMode());
+  React.useEffect( () => {
+    localStorage.setItem('mode', JSON.stringify(mode));
+  }, [mode])
+
+  function getInitialMode() {
+    const savedMode = JSON.parse(localStorage.getItem('mode'));
+    return savedMode || false;
+  }
+
+  console.log("which mode?", mode);
+  return (
+
+      <ReactFullpage
+        licenseKey={'your key'}
+        render={({ state, fullpageApi }) => {
+
+          return (
+              <div className={ mode ? "dark_App" : "App"}>
+                    <div className="section">
+                      <Zoom>
+                          <header className={ mode ? "dark_header" :"header"} id="top">
+                          { mode ?
+                            <button className="mode" onClick={() => setMode(prevMode => !prevMode)}>Night Mode</button>
+                            :
+                            <button className="mode" onClick={() => setMode(prevMode => !prevMode)}>Day Mode</button>
+                          }
+                            <div className="logo">
+                              <img src={ mode ? dark_logo : light_logo}  alt="logo" />
+                            </div>
+                            <footer>Kahti N Demba &copy; 2019</footer>
+                          </header>
+                      </Zoom>
+                    </div>
+
+                  <div className="section">
+                    <Zoom>
+                      <div className="section">
+                        <About modeChange={mode} />
                         </div>
-                        <footer>Kahti N Demba &copy; 2019</footer>
-                      </header>
-                  </Zoom>
-                </div>
-
-
-
-              <div className="section">
-                <Zoom>
-                  <div className="section">
-                    <About/>
+                    </Zoom>
                   </div>
-                </Zoom>
-              </div>
 
-
-
-              <div className="section">
-                <Zoom>
                   <div className="section">
-                    <Portfolio/>
+                    <Zoom>
+                      <div className="section">
+                        <Portfolio modeChange={mode} />
+                      </div>
+                    </Zoom>
                   </div>
-                </Zoom>
-              </div>
 
-
-
-              <div className="section">
-                <Zoom>
                   <div className="section">
-                    <Contact/>
+                    <Zoom>
+                      <div className="section">
+                        <Contact modeChange={mode}/>
+                      </div>
+                    </Zoom>
                   </div>
-                </Zoom>
-              </div>
+            </div>
+          );
+        }}
+      />
+  );
+}
 
 
-          </div>
-      );
-    }}
-  />
-);
+
+
 
 export default App;

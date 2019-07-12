@@ -1,0 +1,71 @@
+
+.App {
+  background-color: white;
+  .header {
+    height: 100%;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    ". . . . . mode"
+    ". logo logo logo logo ."
+    ". . footer footer . .";
+    footer {
+      color: black;
+      font-size: 0.8em;
+      text-align: center;
+      align-self: center;
+      grid-area: footer;
+    }
+    .logo {
+      grid-area: logo;
+    }
+    .mode {
+      grid-area: mode;
+      justify-self: end;
+      writing-mode: vertical-rl;
+      border: none;
+      width: 30px;
+      height: 50%;
+      background-color: white;
+      box-shadow: 0px 2px 9px rgba(122, 122, 122, .5);
+    }
+  }
+}
+
+.dark_App {
+  background-color: #100E0E;
+
+  .dark_header {
+    height: 100%;
+    background-color: #100E0E;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    ". . . . . mode"
+    ". logo logo logo logo ."
+    ". . footer footer . .";
+    footer {
+      color: white;
+      font-size: 0.8em;
+      text-align: center;
+      align-self: center;
+      grid-area: footer;
+    }
+    .logo {
+      grid-area: logo;
+    }
+    .mode {
+      grid-area: mode;
+      justify-self: end;
+      writing-mode: vertical-rl;
+      border: none;
+      width: 30px;
+      height: 50%;
+      background-color: white;
+      box-shadow: 0px 2px 9px rgba(122, 122, 122, .5);
+    }
+  }
+}

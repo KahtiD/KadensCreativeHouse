@@ -1,0 +1,240 @@
+@font-face {
+  font-family: 'Maddison Signature DEMO';
+}
+
+  .body {
+    height: 710px;
+
+    .contact-wrapper {
+      margin-top: 20px;
+      display: grid;
+      grid-template-rows: 15% 85%;
+
+      .titleOne {
+        font-family:  'Maddison Signature DEMO';
+        text-align: center;
+      }
+
+      .formArea {
+        width: 80%;
+        height: 80%;
+        margin: 0 auto;
+
+        .formWrapper {
+          display: grid;
+          grid-template-columns: repeat(6, 1fr);
+          grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
+          grid-row-gap: 10px;
+          grid-template-areas:
+          "name name name name name name "
+          "email email email email email email"
+          "subject subject subject subject subject subject "
+          "message message message message message message"
+          ". . . . . send";
+        }
+      }
+
+    @media screen and (min-width: 750px) {
+      .formArea {
+        width: 60%;
+        height: 70%;
+        margin: 0 auto;
+
+        .formWrapper {
+          display: grid;
+          grid-template-columns: repeat(6, 1fr);
+          grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
+          grid-row-gap: 10px;
+          grid-template-areas:
+          "name name name . . . "
+          "email email email email . ."
+          "subject subject subject subject subject . "
+          "message message message message message message"
+          ". . . . . send";
+        }
+      }
+  }
+        .name{
+          height: 40px;
+          width: 100%;
+          border: 6px solid #00EBFF;
+          grid-area: name;
+          resize: none;
+        }
+        .email {
+          height: 40px;
+          width: 100%;
+          border: 6px solid #00FF80;
+          grid-area: email;
+          resize: none;
+        }
+        .subject {
+          height: 40px;
+          width: 100%;
+          border: 6px solid #E2FF00;
+          grid-area: subject;
+          resize: none;
+        }
+        .message {
+          border: 6px solid #FF9D00;
+          width: 100%;
+          grid-area: message;
+          resize: none;
+        }
+        ::placeholder {
+          font-size: 25px;
+          font-family: 'Shree Devanagari 714';
+        }
+        textarea {
+          font-size: 25px;
+        }
+        .contactSubmit {
+          border: none;
+          font-family: 'Maddison Signature DEMO';
+          background: transparent;
+          font-size: 50px;
+          position: relative;
+          bottom: 58px;
+          height: 80px;
+          grid-area: send;
+        }
+
+        .submitCover {
+          margin: 0 auto;
+          width: 367px;
+          margin-top: 150px;
+          font-family: 'Shree Devanagari 714';
+          text-align: center;
+
+          .close {
+            border: none;
+            width: 100px;
+            height: 50px;
+            background-color: white;
+            box-shadow: 0px 2px 9px rgba(122, 122, 122, .5);
+          }
+        }
+    }
+}
+
+
+
+
+.dark_body {
+  height: 710px;
+
+  .contact-wrapper {
+    margin-top: 20px;
+    display: grid;
+    grid-template-rows: 15% 85%;
+
+    .titleOne {
+      font-family:  'Maddison Signature DEMO';
+      text-align: center;
+      color: white;
+    }
+
+    .formArea {
+      width: 80%;
+      height: 80%;
+      margin: 0 auto;
+
+      .formWrapper {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
+        grid-row-gap: 10px;
+        grid-template-areas:
+        "name name name name name name "
+        "email email email email email email"
+        "subject subject subject subject subject subject "
+        "message message message message message message"
+        ". . . . . send";
+      }
+    }
+
+  @media screen and (min-width: 750px) {
+    .formArea {
+      width: 60%;
+      height: 70%;
+      margin: 0 auto;
+
+      .formWrapper {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
+        grid-row-gap: 10px;
+        grid-template-areas:
+        "name name name . . . "
+        "email email email email . ."
+        "subject subject subject subject subject . "
+        "message message message message message message"
+        ". . . . . send";
+      }
+    }
+}
+      .name{
+        height: 40px;
+        width: 100%;
+        border: 6px solid #00EBFF;
+        grid-area: name;
+        resize: none;
+      }
+      .email {
+        height: 40px;
+        width: 100%;
+        border: 6px solid #00FF80;
+        grid-area: email;
+        resize: none;
+      }
+      .subject {
+        height: 40px;
+        width: 100%;
+        border: 6px solid #E2FF00;
+        grid-area: subject;
+        resize: none;
+      }
+      .message {
+        border: 6px solid #FF9D00;
+        width: 100%;
+        grid-area: message;
+        resize: none;
+      }
+      ::placeholder {
+        font-size: 25px;
+        font-family: 'Shree Devanagari 714';
+      }
+      textarea {
+        font-size: 25px;
+        color: white;
+        background-color: #100E0E;
+      }
+      .contactSubmit {
+        border: none;
+        font-family: 'Maddison Signature DEMO';
+        background: transparent;
+        font-size: 50px;
+        position: relative;
+        bottom: 58px;
+        height: 80px;
+        grid-area: send;
+        color: white;
+      }
+
+      .submitCover {
+        margin: 0 auto;
+        width: 367px;
+        margin-top: 150px;
+        font-family: 'Shree Devanagari 714';
+        text-align: center;
+
+        .close {
+          border: none;
+          width: 100px;
+          height: 50px;
+          background-color: white;
+          box-shadow: 0px 2px 9px rgba(122, 122, 122, .5);
+        }
+      }
+  }
+}
