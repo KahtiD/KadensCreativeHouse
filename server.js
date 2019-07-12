@@ -3,16 +3,15 @@ const express = require('express');
 const formidable = require('express-formidable');
 // const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
+const path = require('path');
 
 
 const app = express();
-const port = 4001;
+const port = process.env.PORT || 4001;
 
-app.use(express.static('/client/public'));
+// app.use(express.static('/client/public'));
 
 app.use(formidable());
-
-
 
 const transporter = nodemailer.createTransport({
     service: 'gmail',
@@ -54,7 +53,12 @@ app.post('/contactUs', (req, res) => {
 
 });
 
-
+if(process.env.NODE_ENV === 'production') {
+  app.use(express.static('client/build'));
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+  });
+}
 
 
 
