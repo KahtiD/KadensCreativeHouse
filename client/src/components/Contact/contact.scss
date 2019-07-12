@@ -1,5 +1,15 @@
 @font-face {
-  font-family: 'Maddison Signature DEMO';
+    font-family: 'Front Page Neue';
+    src: url('../../fonts/frontpageneue-webfont.svg') format('svg'),
+         url('../../fonts/frontpageneue-webfont.woff') format('woff'),
+         url('../../fonts/frontpageneue-webfont.woff2') format('woff2'),
+}
+
+@font-face {
+    font-family: 'maddison_signature_demoObdemo';
+    src: url('../../fonts/maddison_signature_demo-webfont.svg') format('svg'),
+         url('../../fonts/maddison_signature_demo-webfont.woff') format('woff'),
+         url('../../fonts/maddison_signature_demo-webfont.woff2') format('woff2');
 }
 
   .body {
@@ -11,7 +21,7 @@
       grid-template-rows: 15% 85%;
 
       .titleOne {
-        font-family:  'Maddison Signature DEMO';
+        font-family:  'maddison_signature_demoObdemo';
         text-align: center;
       }
 
@@ -90,7 +100,7 @@
         }
         .contactSubmit {
           border: none;
-          font-family: 'Maddison Signature DEMO';
+          font-family: 'maddison_signature_demoObdemo';
           background: transparent;
           font-size: 50px;
           position: relative;
@@ -129,7 +139,7 @@
     grid-template-rows: 15% 85%;
 
     .titleOne {
-      font-family:  'Maddison Signature DEMO';
+      font-family:  'maddison_signature_demoObdemo';
       text-align: center;
       color: white;
     }
@@ -211,7 +221,7 @@
       }
       .contactSubmit {
         border: none;
-        font-family: 'Maddison Signature DEMO';
+        font-family: 'maddison_signature_demoObdemo';
         background: transparent;
         font-size: 50px;
         position: relative;

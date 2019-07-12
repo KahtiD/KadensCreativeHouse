@@ -35,9 +35,13 @@ function App(props) {
                       <Zoom>
                           <header className={ mode ? "dark_header" :"header"} id="top">
                           { mode ?
-                            <button className="mode" onClick={() => setMode(prevMode => !prevMode)}>Night Mode</button>
+                            <button className="mode" onClick={() => setMode(prevMode => !prevMode)}>
+                              <span style={{writingMode: "vertical-rl", width: "100%"}}>Night Mode</span>
+                            </button>
                             :
-                            <button className="mode" onClick={() => setMode(prevMode => !prevMode)}>Day Mode</button>
+                            <button className="mode" onClick={() => setMode(prevMode => !prevMode)}>
+                              <span style={{writingMode: "vertical-rl", width: "100%"}}>Day Mode</span>
+                            </button>
                           }
                             <div className="logo">
                               <img src={ mode ? dark_logo : light_logo}  alt="logo" />

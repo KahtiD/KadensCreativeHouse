@@ -1,5 +1,15 @@
 @font-face {
-  font-family: 'Maddison Signature DEMO';
+    font-family: 'Front Page Neue';
+    src: url('../../fonts/frontpageneue-webfont.svg') format('svg'),
+         url('../../fonts/frontpageneue-webfont.woff') format('woff'),
+         url('../../fonts/frontpageneue-webfont.woff2') format('woff2'),
+}
+
+@font-face {
+    font-family: 'maddison_signature_demoObdemo';
+    src: url('../../fonts/maddison_signature_demo-webfont.svg') format('svg'),
+         url('../../fonts/maddison_signature_demo-webfont.woff') format('woff'),
+         url('../../fonts/maddison_signature_demo-webfont.woff2') format('woff2');
 }
 
 .body {
@@ -18,7 +28,7 @@
       width: 90%;
       height: 90%;
       position: absolute;
-      font-family: 'Maddison Signature DEMO';
+      font-family: 'maddison_signature_demoObdemo';
       display: grid;
       grid-gap: 15px;
       grid-template-rows: repeat(7, 1fr);
@@ -116,7 +126,7 @@
 
       .gallery {
         position: absolute;
-        font-family: 'Maddison Signature DEMO';
+        font-family: 'maddison_signature_demoObdemo';
         margin: 0 auto;
         width: 60%;
         height: 70%;
@@ -171,7 +181,7 @@
       width: 90%;
       height: 90%;
       position: absolute;
-      font-family: 'Maddison Signature DEMO';
+      font-family: 'maddison_signature_demoObdemo';
       display: grid;
       grid-gap: 15px;
       grid-template-rows: repeat(7, 1fr);
@@ -271,7 +281,7 @@
 
       .gallery {
         position: absolute;
-        font-family: 'Maddison Signature DEMO';
+        font-family: 'maddison_signature_demoObdemo';
         margin: 0 auto;
         width: 60%;
         height: 70%;

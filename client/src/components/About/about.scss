@@ -1,9 +1,21 @@
 
+@font-face {
+    font-family: 'Front Page Neue';
+    src: url('../../fonts/frontpageneue-webfont.svg') format('svg'),
+         url('../../fonts/frontpageneue-webfont.woff') format('woff'),
+         url('../../fonts/frontpageneue-webfont.woff2') format('woff2'),
+}
+
+@font-face {
+    font-family: 'maddison_signature_demoObdemo';
+    src: url('../../fonts/maddison_signature_demo-webfont.svg') format('svg'),
+         url('../../fonts/maddison_signature_demo-webfont.woff') format('woff'),
+         url('../../fonts/maddison_signature_demo-webfont.woff2') format('woff2');
+}
+
   .body {
     background-color: white;
     height: 710px;
-    font-family: 'Front Page Neue';
-
       .paragraph {
         width: 90%;
         max-height: 85%;
@@ -14,6 +26,7 @@
         grid-template-rows: repeat(8, 1fr);
 
         .aboutText {
+          font-family: 'Front Page Neue';
           font-size: 2em;
           margin: 0px;
           grid-column: 1/ 9;
@@ -21,7 +34,7 @@
         }
 
         .CV {
-          font-family: 'Maddison Signature DEMO';
+          font-family: 'maddison_signature_demoObdemo';
           color: black;
           grid-column: 1/ span 3;
           grid-row: 8/ span 9;
@@ -30,7 +43,7 @@
         }
 
         .Link {
-          font-family: 'Maddison Signature DEMO';
+          font-family: 'maddison_signature_demoObdemo';
           color: black;
           grid-column: 4/ span 5;
           grid-row: 8/ span 9;
@@ -52,6 +65,7 @@
         grid-auto-flow: dense;
 
         .aboutText {
+          font-family: 'Front Page Neue';
           font-size: 3.8vw;
           font-size: auto;
           margin: 0px;
@@ -60,7 +74,7 @@
         }
 
         .CV {
-          font-family: 'Maddison Signature DEMO';
+          font-family: 'maddison_signature_demoObdemo';
           font-size: 1.8vw;
           color: black;
           grid-column: 1/ span 3;
@@ -69,7 +83,7 @@
         }
 
         .Link {
-          font-family: 'Maddison Signature DEMO';
+          font-family: 'maddison_signature_demoObdemo';
           font-size: 1.6vw;
           color: black;
           grid-column: 5/ span 7;
@@ -85,7 +99,7 @@
 .dark_body {
   background-color: #100E0E;
   height: 710px;
-  font-family: 'Front Page Neue';
+
 
     .paragraph {
       width: 90%;
@@ -97,6 +111,7 @@
       grid-template-rows: repeat(8, 1fr);
 
       .aboutText {
+        font-family: 'Front Page Neue';
         font-size: 2em;
         margin: 0px;
         grid-column: 1/ 9;
@@ -104,7 +119,7 @@
       }
 
       .CV {
-        font-family: 'Maddison Signature DEMO';
+        font-family: 'maddison_signature_demoObdemo';
         color: white;
         grid-column: 1/ span 3;
         grid-row: 8/ span 9;
@@ -113,7 +128,7 @@
       }
 
       .Link {
-        font-family: 'Maddison Signature DEMO';
+        font-family: 'maddison_signature_demoObdemo';
         color: white;
         grid-column: 4/ span 5;
         grid-row: 8/ span 9;
@@ -135,6 +150,7 @@
       grid-auto-flow: dense;
 
       .aboutText {
+        font-family: 'Front Page Neue';
         font-size: 3.8vw;
         font-size: auto;
         margin: 0px;
@@ -143,7 +159,7 @@
       }
 
       .CV {
-        font-family: 'Maddison Signature DEMO';
+        font-family: 'maddison_signature_demoObdemo';
         font-size: 1.8vw;
         color: white;
         grid-column: 1/ span 3;
@@ -152,7 +168,7 @@
       }
 
       .Link {
-        font-family: 'Maddison Signature DEMO';
+        font-family: 'maddison_signature_demoObdemo';
         font-size: 1.6vw;
         color: white;
         grid-column: 5/ span 7;
