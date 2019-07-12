@@ -9,7 +9,6 @@
   "dependencies": {
     "@ap.cx/react-fullpage": "^0.1.10-alpha",
     "@fullpage/react-fullpage": "^0.1.14",
-    "@material-ui/core": "^4.2.0",
     "body-parser": "^1.19.0",
     "dotenv": "^8.0.0",
     "express": "^4.17.1",
