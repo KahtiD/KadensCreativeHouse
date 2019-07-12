@@ -22,7 +22,9 @@ function App(props) {
     return savedMode || false;
   }
 
-  console.log("which mode?", mode);
+
+
+
   return (
 
       <ReactFullpage
