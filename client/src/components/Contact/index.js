@@ -70,15 +70,6 @@ render() {
       <h1 className="titleOne">Contact Me</h1>
       <div className="formArea">
       {this.state.formSubmit ?
-        <div className="submitCover">
-          <h1>Thank You.</h1>
-          <h2>Your message has been recieved.</h2>
-          <h3>I will be in contact soon!</h3>
-          <button className="close" onClick={this.handleHidemessage.bind(this)}>Close</button>
-        </div>
-
-        :
-
         <form  className="formWrapper" onSubmit={e => this.handleSubmit.call(this, e)}>
              <textarea className="name" name="name" placeholder="Name" value={this.state.name} onChange={e => this.handleChange.call(this, e)} required></textarea>
              <textarea className="email" name="email" placeholder="Email"  value={this.state.email} onChange={e => this.handleChange.call(this, e)} required></textarea>
@@ -86,6 +77,15 @@ render() {
              <textarea className="message" name="message" placeholder="Message" value={this.state.message} onChange={e => this.handleChange.call(this, e)} required></textarea>
              <input type="submit" className="contactSubmit" value="Send" ></input>
           </form>
+
+        :
+
+          <div className="submitCover">
+            <h1 className="thanks">Thank You.</h1>
+            <h2 className="recieved">Your message has been recieved.</h2>
+            <h3 className="soon">I will be in contact soon!</h3>
+            <button className="close" onClick={this.handleHidemessage.bind(this)}>Close</button>
+          </div>
       }
 
         </div>
