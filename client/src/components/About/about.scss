@@ -27,7 +27,7 @@
 
         .aboutText {
           font-family: 'Front Page Neue';
-          font-size: 2em;
+          font-size: 4.2vh;
           margin: 0px;
           grid-column: 1/ 9;
           grid-row: 1/ 7;
@@ -37,7 +37,7 @@
           font-family: 'maddison_signature_demoObdemo';
           color: black;
           grid-column: 1/ span 3;
-          grid-row: 8/ span 9;
+          grid-row: 7/ span 9;
           align-self: center;
           z-index: 1;
         }
@@ -46,7 +46,7 @@
           font-family: 'maddison_signature_demoObdemo';
           color: black;
           grid-column: 4/ span 5;
-          grid-row: 8/ span 9;
+          grid-row: 7/ span 9;
           align-self: center;
           justify-content: end;
           z-index: 1;
@@ -112,7 +112,7 @@
 
       .aboutText {
         font-family: 'Front Page Neue';
-        font-size: 2em;
+        font-size: 4.2vh;
         margin: 0px;
         grid-column: 1/ 9;
         grid-row: 1/ 7;
@@ -122,7 +122,7 @@
         font-family: 'maddison_signature_demoObdemo';
         color: white;
         grid-column: 1/ span 3;
-        grid-row: 8/ span 9;
+        grid-row: 7/ span 9;
         align-self: center;
         z-index: 1;
       }
@@ -131,7 +131,7 @@
         font-family: 'maddison_signature_demoObdemo';
         color: white;
         grid-column: 4/ span 5;
-        grid-row: 8/ span 9;
+        grid-row: 7/ span 9;
         align-self: center;
         justify-content: end;
         z-index: 1;
