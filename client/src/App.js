@@ -4,7 +4,7 @@ import dark_logo from './images/darklogo.svg';
 import {About, Portfolio, Contact} from './components';
 import './App.scss';
 import Zoom from 'react-reveal/Zoom';
-// import ReactFullpage from "@fullpage/react-fullpage";
+import ReactFullpage from "@fullpage/react-fullpage";
 
 
 
@@ -25,7 +25,11 @@ function App(props) {
 
 
 
+  return (
 
+      <ReactFullpage
+        licenseKey={'your key'}
+        render={({ state, fullpageApi }) => {
 
           return (
               <div className={ mode ? "dark_App" : "App"}>
@@ -74,6 +78,9 @@ function App(props) {
                   </div>
             </div>
           );
+        }}
+      />
+  );
 }
 
 
