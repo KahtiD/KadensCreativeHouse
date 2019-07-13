@@ -14,7 +14,7 @@ const port = process.env.PORT || 4001;
 app.use(formidable());
 
 const transporter = nodemailer.createTransport({
-    service: "hotmail",
+    service: "gmail",
     // port: 587,
     auth: {
       user: process.env.EMAIL,
@@ -34,8 +34,8 @@ app.post('/contactUs', (req, res) => {
   // console.log('see body', req.fields);
 
   let mailOptions = {
-          from: ` "Ya Bish" <${process.env.EMAIL}>`, // e-commerce email
-          to: process.env.RECEVING_EMAIL, // client/customers email
+          from: ` "Ya Bish" <${process.env.EMAIL}>`,
+          to: process.env.RECEVING_EMAIL,
           subject: req.fields.subject,
           text: 'Hello world?',
           html: emailOutput,
