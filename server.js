@@ -34,7 +34,7 @@ app.post('/contactUs', (req, res) => {
   // console.log('see body', req.fields);
 
   let mailOptions = {
-          from: ` "Ya Bish" <${process.env.EMAIL}>`,
+          from: ` "Kaden's Creative House" <${process.env.EMAIL}>`,
           to: process.env.RECEVING_EMAIL,
           subject: req.fields.subject,
           text: 'Hello world?',
