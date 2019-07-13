@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './about.scss';
-
+import pdf from '../../images/Kahti Demba CV.pdf';
 
 
 
@@ -29,7 +29,7 @@ render() {
               <span style={{color: "#FFCE00"}}>My proficiencies lie in; &nbsp;</span>
               <span style={{color: "#FF9D00"}}>Adobe Illustrator, Photoshop, XD, HTML5, CSS3, Vanilla Javascript, React.js & Node.js</span>
             </p>
-            <a className="CV" target="_blank" href="../../images/Kahti Demba CV.pdf">View my CV</a>
+            <a className="CV" target="_blank" href={pdf}>View my CV</a>
             <a className="Link" target="_blank" href="https://www.linkedin.com/in/kahti-demba-79501a138/">LinkedIn</a>
         </div>
       </div>
