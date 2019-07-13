@@ -14,8 +14,7 @@ const port = process.env.PORT || 4001;
 app.use(formidable());
 
 const transporter = nodemailer.createTransport({
-    host: 'smtp.gmail.com',
-    port: 465,
+    service: "hotmail",
     // port: 587,
     auth: {
       user: process.env.EMAIL,

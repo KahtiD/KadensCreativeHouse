@@ -8,8 +8,6 @@ import ReactFullpage from "@fullpage/react-fullpage";
 
 
 
-
-
 function App(props) {
 
   const [mode, setMode] = useState(getInitialMode());
