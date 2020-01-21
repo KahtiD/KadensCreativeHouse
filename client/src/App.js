@@ -46,7 +46,7 @@ function App(props) {
                             <div className="logo">
                               <img src={ mode ? dark_logo : light_logo}  alt="logo" />
                             </div>
-                            <footer>Kahti N Demba &copy; 2019</footer>
+                            <footer>Kahti N Demba &copy; 2020</footer>
                           </header>
                       </Zoom>
                     </div>
