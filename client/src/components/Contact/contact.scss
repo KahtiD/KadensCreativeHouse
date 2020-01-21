@@ -39,11 +39,10 @@
       margin: 0 auto;
 
       .formWrapper {
-        height: 100%;
+        height: 90%;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
-        grid-row-gap: 10px;
         grid-template-areas:
         "name name name name name name "
         "email email email email email email"
@@ -99,11 +98,10 @@
       margin: 0 auto;
 
       .formWrapper {
-        height: 100%;
+        height: 90%;
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
-        grid-row-gap: 10px;
         grid-template-areas:
         "name name name . . . "
         "email email email email . ."
@@ -189,11 +187,10 @@
       margin: 0 auto;
 
       .formWrapper {
-        height: 100%;
+        height: 90%;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
-        grid-row-gap: 10px;
         grid-template-areas:
         "name name name name name name "
         "email email email email email email"
@@ -249,11 +246,10 @@
       margin: 0 auto;
 
       .formWrapper {
-        height: 100%;
+        height: 90%;
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
-        grid-row-gap: 10px;
         grid-template-areas:
         "name name name . . . "
         "email email email email . ."
