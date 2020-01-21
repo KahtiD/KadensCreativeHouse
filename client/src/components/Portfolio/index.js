@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import './portfolio.scss';
 
 import logo1 from '../../images/cp.png';
-import logoMU1 from '../../images/cpMockUp.png';
+import logoMU1 from '../../images/bgnrMockUp.png';
 
 import logo2 from '../../images/fljNew.png';
-import logoMU2 from '../../images/fljMockUp.png';
+import logoMU2 from '../../images/bgnrMockUp.png';
 
 import logo3 from '../../images/bgnrNew.png';
 import logoMU3 from '../../images/bgnrMockUp.png';

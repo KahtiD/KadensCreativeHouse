@@ -18,154 +18,164 @@
          url('../../fonts/geosanslight-webfont.woff') format('woff');
 }
 
-  .body {
-    height: 100%;
+.body {
+  // height: 100%;
+  width: 100%;
 
-    .contact-wrapper {
-      margin-top: 20px;
-      display: grid;
-      grid-template-rows: 15% 85%;
+  .contact-wrapper {
+    padding-block-start: 5%;
+    display: grid;
+    grid-template-rows: 15% 100%;
 
-      .titleOne {
-        font-family:  'maddison_signature_demoObdemo';
-        text-align: center;
-      }
-
-      .formArea {
-        width: 80%;
-        height: 80%;
-        margin: 0 auto;
-
-        .formWrapper {
-          height: 100%;
-          display: grid;
-          grid-template-columns: repeat(6, 1fr);
-          grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
-          grid-row-gap: 10px;
-          grid-template-areas:
-          "name name name name name name "
-          "email email email email email email"
-          "subject subject subject subject subject subject "
-          "message message message message message message"
-          ". . . . . send";
-        }
-
-        .submitCover {
-          margin-top: 25px;
-          height: 60%;
-          font-family: 'geosanslightregular';
-          text-align: center;
-          display: grid;
-          grid-template-columns: repeat(6, 1fr);
-          grid-template-rows: repeat(5, 1fr);
-          grid-template-areas:
-          ". . . . . ."
-          ". thanks thanks thanks thanks ."
-          ". recieved recieved recieved recieved ."
-          ". soon soon soon soon ."
-          ". . close close . .";
-
-          .thanks {
-            grid-area: thanks;
-          }
-          .recieved {
-            grid-area: recieved;
-          }
-          .soon {
-            grid-area: soon;
-          }
-
-          .close {
-            border: none;
-            margin: 0 auto;
-            width: 100%;
-            height: 25px;
-            background-color: white;
-            box-shadow: 0px 2px 9px rgba(122, 122, 122, .5);
-            grid-area: close;
-            align-self: center;
-          }
-        }
-      }
-
-    @media screen and (min-width: 750px) {
-      .formArea {
-        width: 60%;
-        height: 100%;
-        margin: 0 auto;
-
-        .formWrapper {
-          height: 100%;
-          display: grid;
-          grid-template-columns: repeat(6, 1fr);
-          grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
-          grid-row-gap: 10px;
-          grid-template-areas:
-          "name name name . . . "
-          "email email email email . ."
-          "subject subject subject subject subject . "
-          "message message message message message message"
-          ". . . . . send";
-        }
-      }
-  }
-        .name{
-          height: 40px;
-          width: 100%;
-          border: 6px solid #00EBFF;
-          grid-area: name;
-          resize: none;
-        }
-        .email {
-          height: 40px;
-          width: 100%;
-          border: 6px solid #00FF80;
-          grid-area: email;
-          resize: none;
-        }
-        .subject {
-          height: 40px;
-          width: 100%;
-          border: 6px solid #E2FF00;
-          grid-area: subject;
-          resize: none;
-        }
-        .message {
-          border: 6px solid #FF9D00;
-          width: 100%;
-          grid-area: message;
-          resize: none;
-        }
-        ::placeholder {
-          font-size: 2.5vh;
-          font-family: 'geosanslightregular';
-        }
-        textarea {
-          font-size: 2.5vh;
-        }
-        .contactSubmit {
-          border: none;
-          font-family: 'maddison_signature_demoObdemo';
-          background: transparent;
-          font-size: 50px;
-          position: relative;
-          bottom: 58px;
-          height: 80px;
-          grid-area: send;
-        }
+    .titleOne {
+      font-family:  'maddison_signature_demoObdemo';
+      text-align: center;
+      color: black;
     }
+
+    .formArea {
+      width: 80%;
+      height: 100%;
+      margin: 0 auto;
+
+      .formWrapper {
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
+        grid-row-gap: 10px;
+        grid-template-areas:
+        "name name name name name name "
+        "email email email email email email"
+        "subject subject subject subject subject subject "
+        "message message message message message message"
+        ". . . . . send";
+      }
+      .submitCover {
+        // margin: 0 auto;
+        // width: 100%;
+        margin-top: 25px;
+        height: 60%;
+        font-family: 'geosanslightregular';
+        text-align: center;
+        color: black;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas:
+        ". . . . . ."
+        ". thanks thanks thanks thanks ."
+        ". recieved recieved recieved recieved ."
+        ". soon soon soon soon ."
+        ". . close close . .";
+
+        .thanks {
+          grid-area: thanks;
+        }
+        .recieved {
+          grid-area: recieved;
+        }
+        .soon {
+          grid-area: soon;
+        }
+
+        .close {
+          border: none;
+          margin: 0 auto;
+          width: 100%;
+          height: 25px;
+          background-color: white;
+          box-shadow: 0px 2px 9px rgba(122, 122, 122, .5);
+          grid-area: close;
+          align-self: center;
+        }
+      }
+    }
+
+  @media screen and (min-width: 750px) {
+    .formArea {
+      width: 60%;
+      height: 100%;
+      margin: 0 auto;
+
+      .formWrapper {
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
+        grid-row-gap: 10px;
+        grid-template-areas:
+        "name name name . . . "
+        "email email email email . ."
+        "subject subject subject subject subject . "
+        "message message message message message message"
+        ". . . . . send";
+      }
+    }
+}
+      .name{
+        height: 40px;
+        width: 100%;
+        border: 6px solid #00EBFF;
+        grid-area: name;
+        resize: none;
+      }
+      .email {
+        height: 40px;
+        width: 100%;
+        border: 6px solid #00FF80;
+        grid-area: email;
+        resize: none;
+      }
+      .subject {
+        height: 40px;
+        width: 100%;
+        border: 6px solid #E2FF00;
+        grid-area: subject;
+        resize: none;
+      }
+      .message {
+        border: 6px solid #FF9D00;
+        width: 100%;
+        grid-area: message;
+        resize: none;
+        // grid-row: 4/6;
+      }
+      ::placeholder {
+        font-size: 2.5vh;
+        font-family: 'geosanslightregular';
+      }
+      textarea {
+        font-size: 2.5vh;
+        color: grey;
+        background-color: white;
+      }
+      .contactSubmit {
+        border: none;
+        font-family: 'maddison_signature_demoObdemo';
+        background: transparent;
+        font-size: 50px;
+        position: relative;
+        bottom: 80px;
+        height: 80px;
+        grid-area: send;
+        color: black;
+        // grid-row: 6;
+      }
+
+  }
 }
 
 
 
-
 .dark_body {
-  height: 100%;
+  // height: 100%;
+  width: 100%;
 
   .contact-wrapper {
-    margin-top: 20px;
+    padding-block-start: 5%;
     display: grid;
-    grid-template-rows: 15% 85%;
+    grid-template-rows: 15% 100%;
 
     .titleOne {
       font-family:  'maddison_signature_demoObdemo';
@@ -175,7 +185,7 @@
 
     .formArea {
       width: 80%;
-      height: 80%;
+      height: 100%;
       margin: 0 auto;
 
       .formWrapper {
@@ -279,6 +289,7 @@
         width: 100%;
         grid-area: message;
         resize: none;
+        // grid-row: 4/6;
       }
       ::placeholder {
         font-size: 2.5vh;
@@ -295,10 +306,11 @@
         background: transparent;
         font-size: 50px;
         position: relative;
-        bottom: 58px;
+        bottom: 80px;
         height: 80px;
         grid-area: send;
         color: white;
+        // grid-row: 6;
       }
 
   }
