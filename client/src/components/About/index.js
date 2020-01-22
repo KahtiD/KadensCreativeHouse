@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './about.scss';
-import pdf from '../../images/Kahti Demba CV.pdf';
+import pdf from '../../images/KahtiNDemba CV.pdf';
 
 
 
