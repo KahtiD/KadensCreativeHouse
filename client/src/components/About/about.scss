@@ -24,6 +24,10 @@
       display: grid;
       grid-template-columns: repeat(6, 1fr);
       grid-template-rows: repeat(8, 1fr);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
 
       .aboutText {
         font-family: 'Arial';
@@ -63,7 +67,7 @@
       width: 65%;
       max-height: 85%;
       margin: 0 auto;
-      padding-block-start: 5%;
+      padding-block-start: 0%;
       display: grid;
       grid-template-columns: repeat(12, 1fr);
       grid-auto-flow: dense;
@@ -72,7 +76,7 @@
         font-family: 'Arial';
         font-size: 2vw;
         font-size: auto;
-        margin: 0px;
+        margin: 0 auto;
         grid-column: 1/ 13;
         grid-row: 1/ 8;
       }
@@ -116,6 +120,10 @@
       display: grid;
       grid-template-columns: repeat(6, 1fr);
       grid-template-rows: repeat(8, 1fr);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
 
       .aboutText {
         font-family: 'Arial';
@@ -156,7 +164,7 @@
       width: 65%;
       max-height: 85%;
       margin: 0 auto;
-      padding-block-start: 5%;
+      padding-block-start: 0%;
       display: grid;
       grid-template-columns: repeat(12, 1fr);
       grid-auto-flow: dense;

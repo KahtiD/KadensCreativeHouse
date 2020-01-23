@@ -10,8 +10,10 @@
     "lodash.template": "^4.5.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-image-scroller": "^0.3.0",
     "react-scripts": "3.0.1",
-    "serialize-javascript": "^2.1.2"
+    "serialize-javascript": "^2.1.2",
+    "styled-components": "^5.0.0"
   },
   "scripts": {
     "start": "react-scripts start",

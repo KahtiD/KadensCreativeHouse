@@ -85,51 +85,50 @@
       }
   }
 
-  .galleryWrapper {
-    display: grid;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-
-    .galleryView {
-      margin: 0 auto;
-      grid-column: 1/9;
-      grid-row: 3/6;
-      position: relative;
-      bottom: 80px;
-      .next {
-        margin-right: 5px;
-        border: none;
-        width: 100px;
-        height: 50px;
-        box-shadow: 0px 2px 9px rgba(122, 122, 122, .5);
-        background-color: white;
-      }
-      .previous {
-        border: none;
-        width: 100px;
-        height: 50px;
-        box-shadow: 0px 2px 9px rgba(122, 122, 122, .5);
-        background-color: white;
-      }
-    }
-  }
+  // .galleryWrapper {
+  //   display: grid;
+  //   width: 100%;
+  //   height: 100%;
+  //   position: relative;
+  //   grid-template-columns: repeat(8, 1fr);
+  //   grid-template-rows: repeat(6, 1fr);
+  //
+  //   .galleryView {
+  //     margin: 0 auto;
+  //     grid-column: 1/9;
+  //     grid-row: 3/6;
+  //     position: relative;
+  //     bottom: 80px;
+  //     .next {
+  //       margin-right: 5px;
+  //       border: none;
+  //       width: 100px;
+  //       height: 50px;
+  //       box-shadow: 0px 2px 9px rgba(122, 122, 122, .5);
+  //       background-color: white;
+  //     }
+  //     .previous {
+  //       border: none;
+  //       width: 100px;
+  //       height: 50px;
+  //       box-shadow: 0px 2px 9px rgba(122, 122, 122, .5);
+  //       background-color: white;
+  //     }
+  //   }
+  // }
 
   @media screen and (min-width: 750px) {
 
     .sizing {
-      width: 60%;
-      height: 70%;
+      // width: 70%;
+      height: 100%;
       margin: 0 auto;
 
       .gallery {
-        position: absolute;
         font-family: 'maddison_signature_demoObdemo';
         margin: 0 auto;
-        width: 60%;
-        height: 70%;
+        width: inherit;
+        // height: inherit;
         display: grid;
         grid-template-rows: repeat(6, 1fr);
         grid-template-columns: repeat(6, 1fr);
@@ -143,22 +142,22 @@
       }
     }
 
-    .galleryWrapper {
-      display: grid;
-      width: 100%;
-      height: 100%;
-      position: relative;
-      grid-template-columns: repeat(8, 1fr);
-      grid-template-rows: repeat(6, 1fr);
-
-      .galleryView {
-        margin: 0 auto;
-        grid-column: 1/9;
-        grid-row: 1/7;
-        position: relative;
-        bottom: 0px;
-      }
-    }
+    // .galleryWrapper {
+    //   display: grid;
+    //   width: 100%;
+    //   height: 100%;
+    //   position: relative;
+    //   grid-template-columns: repeat(8, 1fr);
+    //   grid-template-rows: repeat(6, 1fr);
+    //
+    //   .galleryView {
+    //     margin: 0 auto;
+    //     grid-column: 1/9;
+    //     grid-row: 1/7;
+    //     position: relative;
+    //     bottom: 0px;
+    //   }
+    // }
   }
 }
 

@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import './portfolio.scss';
+import Showcase from './Showcase';
 
-import logo1 from '../../images/cp.png';
-import logoMU1 from '../../images/bgnrMockUp.png';
+import logo1 from '../../images/new/Brown Paper Bag MockUp.jpg';
+import logoMU1 from '../../images/new/Brown Paper Bag MockUp.jpg';
 
-import logo2 from '../../images/fljNew.png';
-import logoMU2 from '../../images/bgnrMockUp.png';
+import logo2 from '../../images/new/colorplug.png';
+import logoMU2 from '../../images/new/colorplug.png';
 
-import logo3 from '../../images/bgnrNew.png';
-import logoMU3 from '../../images/bgnrMockUp.png';
+import logo3 from '../../images/new/Indstry.jpg';
+import logoMU3 from '../../images/new/Indstry.jpg';
 
 import placeholder from '../../images/default.svg';
 import dark_placeholder from '../../images/dark_default.svg';
@@ -19,188 +20,43 @@ export class Portfolio extends Component {
   constructor() {
     super();
     this.state = {
-      clicked1: false,
-      change1: false,
-      clicked2: false,
-      change2: false,
-      clicked3: false,
-      change3: false,
-      clicked4: false,
-      change4: false,
-      clicked5: false,
-      change5: false,
-      clicked6: false,
-      change6: false,
-
+      clicked: false,
     };
   }
 
-
-  click1 = () => {
+  click = () => {
     this.setState({
-      clicked1: true,
+      clicked: !this.state.clicked,
     });
   }
 
-  unclick1 = () => {
-    this.setState({
-      clicked1: false,
-    });
-  }
-
-  next1 = () => {
-    this.setState({
-      change1: true,
-    })
-  }
-
-  previous1 = () => {
-    this.setState({
-      change1: false,
-    })
-  }
-
-  click2 = () => {
-    this.setState({
-      clicked2: true,
-    });
-  }
-
-  unclick2 = () => {
-    this.setState({
-      clicked2: false,
-    });
-  }
-
-  next2 = () => {
-    this.setState({
-      change2: true,
-    })
-  }
-
-  previous2 = () => {
-    this.setState({
-      change2: false,
-    })
-  }
-
-  click3 = () => {
-    this.setState({
-      clicked3: true,
-    });
-  }
-
-  unclick3 = () => {
-    this.setState({
-      clicked3: false,
-    });
-  }
-
-  next3 = () => {
-    this.setState({
-      change3: true,
-    })
-  }
-
-  previous3 = () => {
-    this.setState({
-      change3: false,
-    })
-  }
-
-  click4 = () => {
-    this.setState({
-      clicked4: true,
-    });
-  }
-
-  unclick4 = () => {
-    this.setState({
-      clicked4: false,
-    });
-  }
-
-  next4 = () => {
-    this.setState({
-      change4: true,
-    })
-  }
-
-  previous4 = () => {
-    this.setState({
-      change4: false,
-    })
-  }
-
-  click5 = () => {
-    this.setState({
-      clicked5: true,
-    });
-  }
-
-  unclick5 = () => {
-    this.setState({
-      clicked5: false,
-    });
-  }
-
-  next5 = () => {
-    this.setState({
-      change5: true,
-    })
-  }
-
-  previous5 = () => {
-    this.setState({
-      change5: false,
-    })
-  }
-
-  click6 = () => {
-    this.setState({
-      clicked6: true,
-    });
-  }
-
-  unclick6 = () => {
-    this.setState({
-      clicked6: false,
-    });
-  }
-
-  next6 = () => {
-    this.setState({
-      change6: true,
-    })
-  }
-
-  previous6 = () => {
-    this.setState({
-      change6: false,
-    })
-  }
 
 render() {
   return(
   <div className={this.props.modeChange ? "dark_body" : "body"}>
     <div className="sizing">
+      {
+        this.state.clicked &&
+        <Showcase style={{position: 'absolute', display: 'inline-block'}}/>
+      }
       <div className={this.state.clicked1 || this.state.clicked2 || this.state.clicked3 ? "faded" : "gallery"}>
 
-          <div className="one" style={{backgroundImage: `url(${logo1})`}} onClick={this.click1.bind(this)} ></div>
-          <div className="two" style={{backgroundImage: `url(${logo2})`}} onClick={this.click2.bind(this)}></div>
-          <div className="three" style={{backgroundImage: `url(${logo3})`}} onClick={this.click3.bind(this)}></div>
+          <div id="one" className="one" style={{backgroundImage: `url(${this.props.modeChange ? dark_placeholder : placeholder})`}} onClick={this.click.bind(this)} ></div>
+          <div id="two" className="two" style={{backgroundImage: `url(${this.props.modeChange ? dark_placeholder : placeholder})`}} onClick={this.click.bind(this)}></div>
+          <div id="three" className="three" style={{backgroundImage: `url(${this.props.modeChange ? dark_placeholder : placeholder})`}} onClick={this.click.bind(this)}></div>
 
 
-          <div className="four" style={{backgroundImage: `url(${this.props.modeChange ? dark_placeholder : placeholder})`}} onClick={this.click4.bind(this)}></div>
-          <div className="five" style={{backgroundImage: `url(${this.props.modeChange ? dark_placeholder : placeholder})`}} onClick={this.click5.bind(this)}></div>
-          <div className="six" style={{backgroundImage: `url(${this.props.modeChange ? dark_placeholder : placeholder})`}} onClick={this.click6.bind(this)}></div>
+          <div id="four" className="four" style={{backgroundImage: `url(${this.props.modeChange ? dark_placeholder : placeholder})`}} onClick={this.click.bind(this)}></div>
+          <div id="five" className="five" style={{backgroundImage: `url(${this.props.modeChange ? dark_placeholder : placeholder})`}} onClick={this.click.bind(this)}></div>
+          <div id="six" className="six" style={{backgroundImage: `url(${this.props.modeChange ? dark_placeholder : placeholder})`}} onClick={this.click.bind(this)}></div>
+
           <h1 className="title">Previous Work</h1>
 
       </div>
 
 
 
-    { this.state.clicked1 &&
+    {/*{ this.state.clicked1 &&
       <div className="galleryWrapper">
         <div className="galleryView">
           <div style={{position: "relative", width: "210px", height: "50px", margin: "0 auto", marginBottom: "20px"}}>
@@ -234,7 +90,7 @@ render() {
             <img src={this.state.change3 ? logo3 :logoMU3} width="100%" height="100%" onClick={this.unclick3.bind(this)} alt="img3"></img>
           </div>
         </div>
-    }
+    }*/}
 
     </div>
   </div>
