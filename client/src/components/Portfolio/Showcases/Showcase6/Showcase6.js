@@ -1,0 +1,63 @@
+import React, { useState } from 'react';
+import styled from 'styled-components';
+import ImageScroller from 'react-image-scroller';
+
+
+const Wrapper = styled.div`
+.hide {
+  display: none;
+}
+.show {
+height: 90%;
+width: 100%;
+position: absolute;
+display: inline-block;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+z-index: 1;
+background-color: white;
+}
+.index-buttons {
+  width: 100%;
+    display: flex;
+    margin: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+    pointer-events: none;
+    position: absolute;
+    bottom: 0;
+    .index-button {
+      padding: 0.5em;
+    border-radius: 50%;
+    }
+}
+`;
+
+const Content = styled.div`
+
+`;
+
+
+const one = 'https://drive.google.com/uc?id=1hLw0Ap1_eekf9vv32uz6vDj9PDvw1j2z';
+const two = 'https://drive.google.com/uc?id=1KBDVqnC8RX0IwvQlE4OUVSHbu3fo0YLu';
+
+const Showcase6 = (work) => {
+  const [close, setClose] = useState(false);
+  return (
+  <Wrapper onClick={() => setClose(true)}>
+    <Content className={close ? 'hide': 'show' } >
+      <ImageScroller style={{width: 'inherit', height: '100%'}}
+        hideScrollbar={false}
+      >
+        <img src={one} alt="First" />
+        <img src={two} alt="Second" />
+      </ImageScroller>
+    </Content>
+  </Wrapper>
+)
+}
+
+
+
+export default Showcase6;
