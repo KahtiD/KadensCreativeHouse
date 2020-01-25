@@ -8,6 +8,7 @@ import Showcase4 from './Showcases/Showcase4';
 import Showcase5 from './Showcases/Showcase5';
 import Showcase6 from './Showcases/Showcase6';
 
+const loader = '../../images/loading.gif'
 
 const thumbnail = 'https://drive.google.com/uc?id=1WrvRzGerL7pE-HQmgPr-ELhQp47p9ILG';
 const thumbnail2 = 'https://drive.google.com/uc?id=1hDs6_LC2f1jEOtiVNLJg8QC6VK3UAk-8';
@@ -92,37 +93,37 @@ render() {
 
           <div id="one" className="one">
             <LazyLoad height={"100%"}>
-              <img  style={{objectFit: "cover"}} width="100%" height="100%" alt="" src={thumbnail} onClick={this.click.bind(this)} />
+              <img style={{objectFit: "cover"}} width="100%" height="100%" alt="" data-src={thumbnail} onClick={this.click.bind(this)} />
             </LazyLoad>
           </div>
 
           <div id="two" className="two">
             <LazyLoad height={"100%"}>
-              <img style={{objectFit: "cover"}} width="100%" height="100%" alt="" src={thumbnail2} onClick={this.click2.bind(this)} />
+              <img style={{objectFit: "cover"}} width="100%" height="100%" alt="" data-src={thumbnail2} onClick={this.click2.bind(this)} />
             </LazyLoad>
           </div>
 
           <div id="three" className="three">
             <LazyLoad height={"100%"}>
-              <img style={{objectFit: "cover"}} width="100%" height="100%" alt="" src={thumbnail3} onClick={this.click3.bind(this)} />
+              <img style={{objectFit: "cover"}} width="100%" height="100%" alt="" data-src={thumbnail3} onClick={this.click3.bind(this)} />
             </LazyLoad>
           </div>
 
           <div id="four" className="four">
             <LazyLoad height={"100%"}>
-              <img style={{objectFit: "cover"}} width="100%" height="100%" alt="" src={thumbnail4} onClick={this.click4.bind(this)} />
+              <img style={{objectFit: "cover"}} width="100%" height="100%" alt="" data-src={thumbnail4} onClick={this.click4.bind(this)} />
             </LazyLoad>
           </div>
 
           <div id="five" className="five">
             <LazyLoad height={"100%"}>
-              <img style={{objectFit: "cover"}} width="100%" height="100%" alt="" src={thumbnail5} onClick={this.click5.bind(this)} />
+              <img style={{objectFit: "cover"}} width="100%" height="100%" alt="" data-src={thumbnail5} onClick={this.click5.bind(this)} />
             </LazyLoad>
           </div>
 
           <div  id="six" className="six">
             <LazyLoad height={"100%"}>
-              <img style={{objectFit: "cover"}} width="100%" height="100%" alt="" src={thumbnail6} onClick={this.click6.bind(this)} />
+              <img style={{objectFit: "cover"}} width="100%" height="100%" alt="" data-src={thumbnail6} onClick={this.click6.bind(this)} />
             </LazyLoad>
           </div>
 

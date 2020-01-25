@@ -45,13 +45,14 @@ const two = 'https://drive.google.com/uc?id=1KBDVqnC8RX0IwvQlE4OUVSHbu3fo0YLu';
 const Showcase6 = (work) => {
   const [close, setClose] = useState(false);
   return (
-  <Wrapper onClick={() => setClose(true)}>
+  <Wrapper style={{cursor: 'pointer'}} onClick={() => setClose(true)}>
     <Content className={close ? 'hide': 'show' } >
+      *Tap here to close
       <ImageScroller style={{width: 'inherit', height: '100%'}}
         hideScrollbar={false}
       >
-        <img src={one} alt="First" />
-        <img src={two} alt="Second" />
+        <img data-src={one} alt="First" />
+        <img data-src={two} alt="Second" />
       </ImageScroller>
     </Content>
   </Wrapper>

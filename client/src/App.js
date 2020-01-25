@@ -27,6 +27,7 @@ function App(props) {
 
       <ReactFullpage
         licenseKey={'your key'}
+        lazyLoading={true}
         render={({ state, fullpageApi }) => {
 
           return (

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 import styled from 'styled-components';
 import ImageScroller from 'react-image-scroller';
 
@@ -47,14 +46,13 @@ const Showcase2 = (work) => {
   return (
   <Wrapper onClick={() => setClose(true)}>
     <Content className={close ? 'hide': 'show' }>
-
+      *Tap here to close
       <ImageScroller style={{width: 'inherit', height: '100%'}}
         hideScrollbar={false}
       >
-        <img src={one} alt="First" />
-        <img src={two} alt="Second" />
+        <img data-src={one} alt="First" />
+        <img data-src={two} alt="Second" />
       </ImageScroller>
-     
     </Content>
   </Wrapper>
 )

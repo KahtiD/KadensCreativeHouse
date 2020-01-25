@@ -4,6 +4,7 @@
   "private": true,
   "proxy": "http://localhost:4001",
   "dependencies": {
+    "@fullpage/react-fullpage": "^0.1.17",
     "eslint-utils": "^2.0.0",
     "handlebars": "^4.7.2",
     "lodash": "^4.17.15",

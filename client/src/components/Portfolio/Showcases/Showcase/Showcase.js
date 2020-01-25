@@ -55,21 +55,21 @@ const Showcase = (work) => {
   return (
   <Wrapper onClick={() => setClose(true)}>
     <Content className={close ? 'hide': 'show' }>
-
+        *Tap here to close
         <ImageScroller style={{width: 'inherit', height: '100%'}}
           hideScrollbar={false}
         >
-        <img src={one} alt="First" />
-        <img src={two} alt="Second" />
-        <img src={three} alt="Third" />
-        <img src={four} alt="Fourth" />
-        <img src={five} alt="Fifth" />
-        <img src={six} alt="Sixth" />
-        <img src={seven} alt="Seven" />
-        <img src={eight} alt="Eight" />
-        <img src={nine} alt="Nine" />
-        <img src={ten} alt="Ten" />
-        <img src={eleven} alt="Eleven" />
+        <img data-src={one} alt="First" />
+        <img data-src={two} alt="Second" />
+        <img data-src={three} alt="Third" />
+        <img data-src={four} alt="Fourth" />
+        <img data-src={five} alt="Fifth" />
+        <img data-src={six} alt="Sixth" />
+        <img data-src={seven} alt="Seven" />
+        <img data-src={eight} alt="Eight" />
+        <img data-src={nine} alt="Nine" />
+        <img data-src={ten} alt="Ten" />
+        <img data-src={eleven} alt="Eleven" />
         </ImageScroller>
 
     </Content>
