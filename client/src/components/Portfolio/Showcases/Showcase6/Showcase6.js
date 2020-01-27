@@ -47,12 +47,12 @@ const Showcase6 = (work) => {
   return (
   <Wrapper style={{cursor: 'pointer'}} onClick={() => setClose(true)}>
     <Content className={close ? 'hide': 'show' } >
-      *Tap here to close
+      <button>Tap here or white space to close</button>
       <ImageScroller style={{width: 'inherit', height: '100%'}}
         hideScrollbar={false}
       >
-        <img data-src={one} alt="First" />
-        <img data-src={two} alt="Second" />
+        <img src={one} alt="First" />
+        <img src={two} alt="Second" />
       </ImageScroller>
     </Content>
   </Wrapper>

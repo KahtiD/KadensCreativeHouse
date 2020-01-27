@@ -39,19 +39,19 @@ const Content = styled.div`
 `;
 
 const one = 'https://drive.google.com/uc?id=1vcW_HVz5fn3oMhvBtzVbkRrSSPAu2VId';
-const two = 'https://drive.google.com/open?id=1Z9HYImhzUHFL7X6LrRZPAhFl-fCBQjDq';
+const two = 'https://drive.google.com/uc?id=1Z9HYImhzUHFL7X6LrRZPAhFl-fCBQjDq';
 
 const Showcase5 = (work) => {
   const [close, setClose] = useState(false);
   return (
   <Wrapper onClick={() => setClose(true)}>
     <Content className={close ? 'hide': 'show' }>
-        *Tap here to close
+        <button>Tap here or white space to close</button>
         <ImageScroller style={{width: 'inherit', height: '100%'}}
           hideScrollbar={false}
         >
-          <img data-src={one} alt="First" />
-          <img data-src={two} alt="Second" />
+          <img src={one} alt="First" />
+          <img src={two} alt="Second" />
         </ImageScroller>
     </Content>
   </Wrapper>

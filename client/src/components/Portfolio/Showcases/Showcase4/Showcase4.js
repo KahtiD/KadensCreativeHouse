@@ -56,11 +56,11 @@ const Showcase4 = (work) => {
   return (
   <Wrapper onClick={() => setClose(true)}>
     <Content className={close ? 'hide': 'show' }>
-        *Tap here to close
+        <button>Tap here or white space to close</button>
         <ImageScroller style={{width: 'inherit', height: '100%'}}
           hideScrollbar={false}
         >
-          <img data-src={one} alt="First" />
+          <img src={one} alt="First" />
           <video controls autoplay>
             <source src={two} alt="Second" type="video/mp4" />
           </video>
