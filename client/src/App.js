@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
+import Zoom from 'react-reveal/Zoom';
 import light_logo from './images/logo.svg';
 import dark_logo from './images/darklogo.svg';
 import {About, Portfolio, Contact} from './components';
 import './App.scss';
-import Zoom from 'react-reveal/Zoom';
-import ReactFullpage from "@fullpage/react-fullpage";
+// import ReactFullpage from "@fullpage/react-fullpage";
 
 
 
@@ -21,18 +21,9 @@ function App(props) {
   }
 
 
-
-
-  return (
-
-      <ReactFullpage
-        licenseKey={'your key'}
-        lazyLoading={true}
-        render={({ state, fullpageApi }) => {
-
           return (
               <div className={ mode ? "dark_App" : "App"}>
-                    <div className="section">
+                    <section className="section">
                       <Zoom>
                           <header className={ mode ? "dark_header" :"header"} id="top">
                           { mode ?
@@ -50,36 +41,31 @@ function App(props) {
                             <footer>Kahti N Demba &copy; 2020</footer>
                           </header>
                       </Zoom>
-                    </div>
+                    </section>
 
-                  <div className="section">
+                  <section className="section">
                     <Zoom>
-                      <div className="section">
+                      <div style={{height: 'inherit'}}>
                         <About modeChange={mode} />
-                        </div>
+                      </div>
                     </Zoom>
-                  </div>
+                  </section>
 
-                  <div className="section">
+                  <section className="section">
                     <Zoom>
-                      <div className="section">
+                      <div style={{height: 'inherit'}}>
                         <Portfolio modeChange={mode} />
                       </div>
                     </Zoom>
-                  </div>
+                  </section>
 
-                  <div className="section">
+                  <section className="section">
                     <Zoom>
-                      <div className="section">
                         <Contact modeChange={mode}/>
-                      </div>
                     </Zoom>
-                  </div>
+                  </section>
             </div>
           );
-        }}
-      />
-  );
 }
 
 
