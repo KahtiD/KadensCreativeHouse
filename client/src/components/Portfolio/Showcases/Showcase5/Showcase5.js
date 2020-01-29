@@ -33,7 +33,7 @@ const Button = styled.button`
 `;
 
 const one = 'https://drive.google.com/uc?id=1vcW_HVz5fn3oMhvBtzVbkRrSSPAu2VId';
-const two = 'https://drive.google.com/uc?id=1Z9HYImhzUHFL7X6LrRZPAhFl-fCBQjDq';
+const two = 'https://drive.google.com/uc?id=1mHzO9WNL39rFNJMlMKlxCE5pWoz95jjr';
 
 const Showcase5 = (work) => {
   const [close, setClose] = useState(false);

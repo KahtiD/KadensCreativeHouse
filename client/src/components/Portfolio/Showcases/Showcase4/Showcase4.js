@@ -33,7 +33,7 @@ const Button = styled.button`
 `;
 
 
-const one = 'https://drive.google.com/uc?id=18FDOV29U4zSXGREEWNLaOQS5ewN5tJDS';
+const one = 'https://drive.google.com/uc?id=1GA-U2qyF6E7cccv-vuXNfBI80GdGVPeI';
 const two = 'https://drive.google.com/uc?id=1cBhJgm9_u5lDbuzEXkEihL6lf9-lM-6p';
 
 const Showcase4 = (work) => {
@@ -47,7 +47,7 @@ const Showcase4 = (work) => {
           hideScrollbar={false}
         >
           <img src={one} alt="First" />
-          <video controls autoplay>
+          <video controls>
             <source src={two} alt="Second" type="video/mp4" />
           </video>
         </ImageScroller>
