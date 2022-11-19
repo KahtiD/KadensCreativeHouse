@@ -14,7 +14,7 @@
     "react-image-scroller": "^0.3.0",
     "react-lazy-load-image-component": "^1.4.0",
     "react-lazyload": "^2.6.5",
-    "react-scripts": "3.0.1",
+    "react-scripts": "5.0.1",
     "serialize-javascript": "^2.1.2",
     "styled-components": "^5.0.0"
   },
